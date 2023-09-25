@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: s3
+    tables:
+      - name: netflix
+        description: netflix_dataset
+        meta:
+          external_location: "read_parquet('s3://jigsaw-labs-student/chicago/*.parquet')"
