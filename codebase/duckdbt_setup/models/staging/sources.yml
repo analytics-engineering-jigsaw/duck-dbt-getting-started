@@ -5,4 +5,4 @@ sources:
       - name: netflix
         description: netflix_dataset
         meta:
-          external_location: "read_parquet('s3://jigsaw-labs-student/chicago/*.parquet')"
+          external_location: "read_parquet('s3://jigsaw-labs-student/chicago/*.parquet', filename=true)"
